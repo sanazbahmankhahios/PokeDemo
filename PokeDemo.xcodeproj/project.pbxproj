@@ -27,6 +27,8 @@
 		B7466A732EA27CE000A86599 /* PokeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7466A892EA27CE100A86599 /* PokeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7466A932EA27CE100A86599 /* PokeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7466ABC2EA27E2600A86599 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		B7466ABD2EA27E4700A86599 /* PokemonSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSpecies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +90,7 @@
 		B7466A6A2EA27CE000A86599 = {
 			isa = PBXGroup;
 			children = (
+				B7466ABB2EA27E1000A86599 /* Model */,
 				B7466A752EA27CE000A86599 /* PokeDemo */,
 				B7466A8C2EA27CE100A86599 /* PokeDemoTests */,
 				B7466A962EA27CE100A86599 /* PokeDemoUITests */,
@@ -103,6 +106,15 @@
 				B7466A932EA27CE100A86599 /* PokeDemoUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B7466ABB2EA27E1000A86599 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7466ABC2EA27E2600A86599 /* Pokemon.swift */,
+				B7466ABD2EA27E4700A86599 /* PokemonSpecies.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
