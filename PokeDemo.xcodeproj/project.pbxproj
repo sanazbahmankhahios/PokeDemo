@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B7466ACB2EA2819000A86599 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AC82EA280D200A86599 /* AppCoordinator.swift */; };
+		B7466ACC2EA2819500A86599 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466ACA2EA2813500A86599 /* DIContainer.swift */; };
+		B7466ACD2EA2819E00A86599 /* PokemonCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AC72EA280B000A86599 /* PokemonCoordinator.swift */; };
+		B7466ACE2EA281A300A86599 /* PokemonImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AC52EA2803E00A86599 /* PokemonImageHelper.swift */; };
+		B7466ACF2EA281A700A86599 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AC42EA2802900A86599 /* NetworkConstants.swift */; };
+		B7466AD02EA281AC00A86599 /* CollectionViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AC32EA2801100A86599 /* CollectionViewConstants.swift */; };
+		B7466AD12EA281B100A86599 /* PokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AC12EA27F7900A86599 /* PokemonService.swift */; };
+		B7466AD22EA281B500A86599 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AC02EA27F6300A86599 /* NetworkError.swift */; };
+		B7466AD32EA281B900A86599 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466ABC2EA27E2600A86599 /* Pokemon.swift */; };
+		B7466AD42EA281BD00A86599 /* PokemonSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466ABD2EA27E4700A86599 /* PokemonSpecies.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B7466A8A2EA27CE100A86599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -36,6 +49,7 @@
 		B7466AC52EA2803E00A86599 /* PokemonImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImageHelper.swift; sourceTree = "<group>"; };
 		B7466AC72EA280B000A86599 /* PokemonCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCoordinator.swift; sourceTree = "<group>"; };
 		B7466AC82EA280D200A86599 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B7466ACA2EA2813500A86599 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -97,6 +111,7 @@
 		B7466A6A2EA27CE000A86599 = {
 			isa = PBXGroup;
 			children = (
+				B7466AC92EA2812D00A86599 /* DI */,
 				B7466AC62EA2809E00A86599 /* Coordinator */,
 				B7466AC22EA2800500A86599 /* Utils */,
 				B7466ABE2EA27F4000A86599 /* Services */,
@@ -153,6 +168,14 @@
 				B7466AC72EA280B000A86599 /* PokemonCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B7466AC92EA2812D00A86599 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				B7466ACA2EA2813500A86599 /* DIContainer.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +322,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7466ACF2EA281A700A86599 /* NetworkConstants.swift in Sources */,
+				B7466ACB2EA2819000A86599 /* AppCoordinator.swift in Sources */,
+				B7466AD02EA281AC00A86599 /* CollectionViewConstants.swift in Sources */,
+				B7466ACE2EA281A300A86599 /* PokemonImageHelper.swift in Sources */,
+				B7466AD32EA281B900A86599 /* Pokemon.swift in Sources */,
+				B7466AD12EA281B100A86599 /* PokemonService.swift in Sources */,
+				B7466ACD2EA2819E00A86599 /* PokemonCoordinator.swift in Sources */,
+				B7466AD42EA281BD00A86599 /* PokemonSpecies.swift in Sources */,
+				B7466ACC2EA2819500A86599 /* DIContainer.swift in Sources */,
+				B7466AD22EA281B500A86599 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
