@@ -31,6 +31,9 @@
 		B7466ABD2EA27E4700A86599 /* PokemonSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSpecies.swift; sourceTree = "<group>"; };
 		B7466AC02EA27F6300A86599 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B7466AC12EA27F7900A86599 /* PokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonService.swift; sourceTree = "<group>"; };
+		B7466AC32EA2801100A86599 /* CollectionViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewConstants.swift; sourceTree = "<group>"; };
+		B7466AC42EA2802900A86599 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		B7466AC52EA2803E00A86599 /* PokemonImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImageHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -92,6 +95,7 @@
 		B7466A6A2EA27CE000A86599 = {
 			isa = PBXGroup;
 			children = (
+				B7466AC22EA2800500A86599 /* Utils */,
 				B7466ABE2EA27F4000A86599 /* Services */,
 				B7466ABB2EA27E1000A86599 /* Model */,
 				B7466A752EA27CE000A86599 /* PokeDemo */,
@@ -127,6 +131,16 @@
 				B7466AC02EA27F6300A86599 /* NetworkError.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B7466AC22EA2800500A86599 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B7466AC52EA2803E00A86599 /* PokemonImageHelper.swift */,
+				B7466AC42EA2802900A86599 /* NetworkConstants.swift */,
+				B7466AC32EA2801100A86599 /* CollectionViewConstants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
