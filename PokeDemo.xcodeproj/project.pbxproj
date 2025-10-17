@@ -17,6 +17,11 @@
 		B7466AD22EA281B500A86599 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AC02EA27F6300A86599 /* NetworkError.swift */; };
 		B7466AD32EA281B900A86599 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466ABC2EA27E2600A86599 /* Pokemon.swift */; };
 		B7466AD42EA281BD00A86599 /* PokemonSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466ABD2EA27E4700A86599 /* PokemonSpecies.swift */; };
+		B7466ADA2EA2831600A86599 /* LayoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AD92EA282D300A86599 /* LayoutFactory.swift */; };
+		B7466ADB2EA2831A00A86599 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AD82EA2828400A86599 /* CollectionView.swift */; };
+		B7466ADC2EA2831F00A86599 /* PokemonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AD72EA2825C00A86599 /* PokemonImageView.swift */; };
+		B7466ADD2EA2832300A86599 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7466AD62EA2823400A86599 /* PokemonCell.swift */; };
+		B7466AE02EA2834700A86599 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B7466ADF2EA2834700A86599 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,10 @@
 		B7466AC72EA280B000A86599 /* PokemonCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCoordinator.swift; sourceTree = "<group>"; };
 		B7466AC82EA280D200A86599 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B7466ACA2EA2813500A86599 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		B7466AD62EA2823400A86599 /* PokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
+		B7466AD72EA2825C00A86599 /* PokemonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImageView.swift; sourceTree = "<group>"; };
+		B7466AD82EA2828400A86599 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		B7466AD92EA282D300A86599 /* LayoutFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7466AE02EA2834700A86599 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +121,7 @@
 		B7466A6A2EA27CE000A86599 = {
 			isa = PBXGroup;
 			children = (
+				B7466AD52EA2822400A86599 /* View */,
 				B7466AC92EA2812D00A86599 /* DI */,
 				B7466AC62EA2809E00A86599 /* Coordinator */,
 				B7466AC22EA2800500A86599 /* Utils */,
@@ -178,6 +189,17 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		B7466AD52EA2822400A86599 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7466AD92EA282D300A86599 /* LayoutFactory.swift */,
+				B7466AD82EA2828400A86599 /* CollectionView.swift */,
+				B7466AD72EA2825C00A86599 /* PokemonImageView.swift */,
+				B7466AD62EA2823400A86599 /* PokemonCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,6 +220,7 @@
 			);
 			name = PokeDemo;
 			packageProductDependencies = (
+				B7466ADF2EA2834700A86599 /* Kingfisher */,
 			);
 			productName = PokeDemo;
 			productReference = B7466A732EA27CE000A86599 /* PokeDemo.app */;
@@ -281,6 +304,9 @@
 			);
 			mainGroup = B7466A6A2EA27CE000A86599;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B7466ADE2EA2834700A86599 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B7466A742EA27CE000A86599 /* Products */;
 			projectDirPath = "";
@@ -322,16 +348,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7466ADD2EA2832300A86599 /* PokemonCell.swift in Sources */,
 				B7466ACF2EA281A700A86599 /* NetworkConstants.swift in Sources */,
 				B7466ACB2EA2819000A86599 /* AppCoordinator.swift in Sources */,
 				B7466AD02EA281AC00A86599 /* CollectionViewConstants.swift in Sources */,
 				B7466ACE2EA281A300A86599 /* PokemonImageHelper.swift in Sources */,
 				B7466AD32EA281B900A86599 /* Pokemon.swift in Sources */,
+				B7466ADB2EA2831A00A86599 /* CollectionView.swift in Sources */,
 				B7466AD12EA281B100A86599 /* PokemonService.swift in Sources */,
+				B7466ADC2EA2831F00A86599 /* PokemonImageView.swift in Sources */,
 				B7466ACD2EA2819E00A86599 /* PokemonCoordinator.swift in Sources */,
 				B7466AD42EA281BD00A86599 /* PokemonSpecies.swift in Sources */,
 				B7466ACC2EA2819500A86599 /* DIContainer.swift in Sources */,
 				B7466AD22EA281B500A86599 /* NetworkError.swift in Sources */,
+				B7466ADA2EA2831600A86599 /* LayoutFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +682,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7466ADE2EA2834700A86599 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7466ADF2EA2834700A86599 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7466ADE2EA2834700A86599 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7466A6B2EA27CE000A86599 /* Project object */;
 }
