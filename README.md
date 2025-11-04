@@ -1,4 +1,4 @@
-# PokeDex
+# PokeDemo
 
 ![UIKit](https://img.shields.io/badge/UIKit-✅-orange) ![iOS](https://img.shields.io/badge/iOS-18.1-blue)
 
